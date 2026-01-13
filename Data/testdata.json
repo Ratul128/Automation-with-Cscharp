@@ -1,10 +1,10 @@
 {
     "positive_case": {
-      "email": "eftiar",
+      "email": "ratul@gmail.com",
       "password": "123456@Ff"
     },
     "negative_case": {
-      "email": "invalid@example.com",
+      "email": "invalid@gmail.com",
       "password": "WrongPassword"
     }
   }
