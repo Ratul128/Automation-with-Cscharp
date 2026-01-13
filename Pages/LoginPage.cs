@@ -7,13 +7,12 @@ namespace LoginAutomationTest.Pages
 {
     public class LoginPage : BasePage
     {
-        //constractor
+        
         public LoginPage(IWebDriver driver) : base(driver)
         { 
 
         }
 
-        // Locators
         private By emailField = By.Id("username");
         private By passwordField = By.XPath("//input[@placeholder='Enter Password']");
         private By loginButton = By.XPath("//button[@type='submit']");
@@ -23,7 +22,6 @@ namespace LoginAutomationTest.Pages
         private By userProfile = By.XPath("//fuse-vertical-navigation/div/div[2]/div[1]/div/div[2]/div[1]");
         private By errorMessage = By.XPath("//*[@id='toast-container']");
 
-        // Actions
         public void Open(string url)
         {
             driver.Navigate().GoToUrl(url);
@@ -47,11 +45,9 @@ namespace LoginAutomationTest.Pages
         {
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
 
-            // Wait until OTP field is visible
             wait.Until(ExpectedConditions.ElementIsVisible(otpField));
             Type(otpField, otp);
 
-            // Wait until Submit button is clickable
             wait.Until(ExpectedConditions.ElementToBeClickable(submitButton));
             Click(submitButton);
         }

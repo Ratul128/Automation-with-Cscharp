@@ -21,7 +21,7 @@ namespace LoginAutomationTest.Tests
             driver.Manage().Window.Maximize();
 
             baseUrl = ConfigReader.Config["BaseUrl"];
-            loginPage = new LoginPage(driver); //constractor
+            loginPage = new LoginPage(driver);
         }
 
         [Test]
@@ -29,26 +29,17 @@ namespace LoginAutomationTest.Tests
         {
             var data = JObject.Parse(File.ReadAllText("Data/testdata.json"))["positive_case"];
 
-            // Step 1: Open URL
             loginPage.Open(baseUrl);
-            //WaitHelper.Wait();
 
-            // Step 2: Login with username & password
             loginPage.Login(
                 data["email"].ToString(),
                 data["password"].ToString()
             );
-            //WaitHelper.Wait(2);
 
-            // Step 3: Click Continue Authentication
             loginPage.ClickContinueAuthentication();
-            //WaitHelper.Wait(2);
 
-            // Step 4: Enter OTP and Submit
             loginPage.EnterOTPAndSubmit("1111");
-            //WaitHelper.Wait(2);
 
-            // Step 5: Verify login success
             Assert.IsTrue(loginPage.IsLoginSuccessful(), "Login Failed!");
         }
 
@@ -57,18 +48,13 @@ namespace LoginAutomationTest.Tests
         {
             var data = JObject.Parse(File.ReadAllText("Data/testdata.json"))["negative_case"];
 
-            // Open URL
             loginPage.Open(baseUrl);
-            //WaitHelper.Wait();
 
-            // Enter invalid credentials
             loginPage.Login(
                 data["email"].ToString(),
                 data["password"].ToString()
             );
-            //WaitHelper.Wait(2);
 
-            // Verify error message displayed
             Assert.IsNotEmpty(loginPage.GetErrorMessage(), "Error message not displayed!");
         }
 
