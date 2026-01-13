@@ -1,0 +1,5 @@
+/Users/nurulamin/LoginAutomationTest/obj/Debug/net6.0/LoginAutomationTest.csproj.AssemblyReference.cache
+/Users/nurulamin/LoginAutomationTest/obj/Debug/net6.0/LoginAutomationTest.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nurulamin/LoginAutomationTest/obj/Debug/net6.0/LoginAutomationTest.AssemblyInfoInputs.cache
+/Users/nurulamin/LoginAutomationTest/obj/Debug/net6.0/LoginAutomationTest.AssemblyInfo.cs
+/Users/nurulamin/LoginAutomationTest/obj/Debug/net6.0/LoginAutomationTest.csproj.CoreCompileInputs.cache

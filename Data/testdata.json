@@ -1,0 +1,11 @@
+{
+    "positive_case": {
+      "email": "eftiar",
+      "password": "123456@Ff"
+    },
+    "negative_case": {
+      "email": "invalid@example.com",
+      "password": "WrongPassword"
+    }
+  }
+  

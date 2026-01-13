@@ -1,0 +1,98 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/nurulamin/LoginAutomationTest/LoginAutomationTest.csproj": {}
+  },
+  "projects": {
+    "/Users/nurulamin/LoginAutomationTest/LoginAutomationTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/nurulamin/LoginAutomationTest/LoginAutomationTest.csproj",
+        "projectName": "LoginAutomationTest",
+        "projectPath": "/Users/nurulamin/LoginAutomationTest/LoginAutomationTest.csproj",
+        "packagesPath": "/Users/nurulamin/.nuget/packages/",
+        "outputPath": "/Users/nurulamin/LoginAutomationTest/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/nurulamin/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.11.0, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.13.2, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
+            "Selenium.Support": {
+              "target": "Package",
+              "version": "[4.39.0, )"
+            },
+            "Selenium.WebDriver": {
+              "target": "Package",
+              "version": "[4.39.0, )"
+            },
+            "Selenium.WebDriver.ChromeDriver": {
+              "target": "Package",
+              "version": "[143.0.7499.19200, )"
+            },
+            "Selenium.WebDriver.GeckoDriver": {
+              "target": "Package",
+              "version": "[0.36.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.136/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
